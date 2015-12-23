@@ -1,5 +1,9 @@
+.app-navbar__brand
+  @media screen and (max-width: $screen-sm-max)
+    text-align: center
+
 .app-navbar__brand-image
-  display: block
+  display: inline-block
   background:
     size: contain
     image: image-url('logo-large-white@2x.png')
@@ -16,6 +20,11 @@
   list-style-type: none
   padding: 0
   margin: 0
+  @media screen and (max-width: $screen-sm-max)
+    padding-top: $grid-gutter-width
+    text-align: center
+  @media screen and (min-width: $screen-md-min)
+    text-align: right
   li
     display: inline-block
     padding: 0 24px

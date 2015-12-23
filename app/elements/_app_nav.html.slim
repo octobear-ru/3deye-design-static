@@ -2,9 +2,10 @@
   .container
     .row
       .col-md-3
-        = link_to '', '', class: 'app-navbar__brand-image'
+        .app-navbar__brand
+          = link_to '', '', class: 'app-navbar__brand-image'
       .col-md-9
-        ul.app-nav.pull-right(role="app-nav")
+        ul.app-nav(role="app-nav")
           - data.navigation.each do |item|
             li(class="#{item.slug.to_s == "plans" ? 'active' : ''}")
               = link_to '', class: 'app-nav__item' do
