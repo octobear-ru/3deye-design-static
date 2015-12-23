@@ -1,0 +1,13 @@
+$font-opensans: 'Open Sans'
+$font-opensans-variants: (200 Light, 400 Regular, 600 Bold)
+
+@each $f in $font-opensans-variants
+  @font-face
+    font-family: $font-opensans
+    src: asset-url('OpenSans-#{nth($f,2)}-webfont.eot', font)
+    src: asset-url('OpenSans-#{nth($f,2)}-webfont.eot?#iefix', font) format("embedded-opentype"), asset-url('OpenSans-#{nth($f,2)}-webfont.woff', font) format("woff"), asset-url('OpenSans-#{nth($f,2)}-webfont.ttf', font) format("truetype")
+    //, asset-url('OpenSans-#{nth($f,2)}-webfont.svg#helveticaneuecyr#{nth($f,2)}-webfont') format("svg")
+    font-weight: nth($f,1)
+    font-style: normal
+
+

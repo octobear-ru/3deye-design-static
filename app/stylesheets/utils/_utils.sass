@@ -1,0 +1,13 @@
+@each $size in 10, 12, 14, 16, 18, 20, 24, 36, 48, 96
+  .icon-size-#{$size}
+    font-size: #{$size}px
+    //min-width: #{$size}px
+
+@each $align in top, middle, bottom, baseline
+  .v-align-#{$align}
+    vertical-align: #{$align}
+
+//@each $c in gray-lighter $c-gray-lighter, gray-light $c-gray-light, red $c-red
+  .text-color-#{nth($c,1)}
+    color: nth($c,2)
+

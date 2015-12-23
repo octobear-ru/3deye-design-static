@@ -1,0 +1,36 @@
+.app-navbar__brand-image
+  display: block
+  background:
+    size: contain
+    image: image-url('logo-large-white@2x.png')
+    repeat: no-repeat
+  width: 106px
+  height: 45px
+
+.app-navbar
+  padding:
+    top: 23px
+    bottom: 23px
+
+.app-nav
+  list-style-type: none
+  padding: 0
+  margin: 0
+  li
+    display: inline-block
+    padding: 0 24px
+    margin: 0
+    & > .app-nav__item
+      display: inline-block
+      padding: 13px 0
+      margin: 0
+      border-bottom: 1px solid transparent
+      &, &:hover, &:focus
+        color: #fff
+      transition: border 0.2s ease
+      &:hover
+        border-bottom: 1px solid rgba(#fff, 0.5)
+    &.active
+      & > .app-nav__item
+        &, &:hover, &:focus
+          border-bottom: 1px solid $brand-primary

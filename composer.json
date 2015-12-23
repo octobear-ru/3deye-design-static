@@ -1,0 +1,11 @@
+{
+    "name": "sibsfinx/fshop-static",
+    "description": "forwardshop design 2015",
+    "authors": [
+        {
+            "name": "Alexander Mescheryakov",
+            "email": "sibsfinx@ya.ru"
+        }
+    ],
+    "require": {}
+}
