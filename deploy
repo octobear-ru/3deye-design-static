@@ -10,6 +10,5 @@ git commit -m 'build'
 git push -f origin $tmp_branch:gh-pages
 echo return to branch $current_branch
 git checkout $current_branch
-npm install
 bower install
 
