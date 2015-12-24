@@ -5,8 +5,9 @@
         .content-block-sm
           .app-footer__brand
             = link_to '', '', class: 'app-footer__brand-image'
-        small
-          | &copy; 3dEYE Inc. 2015
+        .app-footer__copyright.content-block
+          small
+            | &copy; 3dEYE Inc. 2015
       .col-md-10
         .row
           .col-md-7
@@ -20,13 +21,14 @@
                       - else
                         = item.title
           .col-md-5
-            ul.footer-nav.footer-nav--right(role="app-nav")
-              li
-                a.footer-nav__item href=""
-                  | Terms and Conditions
-              li
-                a.footer-nav__item href=""
-                  | Privacy Policy
+            .content-block-sm
+              ul.footer-nav.footer-nav--right(role="app-nav")
+                li
+                  a.footer-nav__item href=""
+                    | Terms and Conditions
+                li
+                  a.footer-nav__item href=""
+                    | Privacy Policy
         .footer-nav__block
           = link_to 'info@3deye.me', 'mailto:info@3deye.me'
         .footer-nav__block
