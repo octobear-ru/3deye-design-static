@@ -7,7 +7,7 @@
   .v-align-#{$align}
     vertical-align: #{$align}
 
-//@each $c in gray-lighter $c-gray-lighter, gray-light $c-gray-light, red $c-red
+@each $c in "gray-lighter" $c-gray-lighter, "gray-light" $c-gray-light, "gray" $c-gray, "gray-dark" $c-gray-dark
   .text-color-#{nth($c,1)}
     color: nth($c,2)
 
