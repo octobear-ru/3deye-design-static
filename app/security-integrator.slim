@@ -1,0 +1,52 @@
+.app-cover.app-cover--plans
+  = partial 'elements/app_nav'
+  .app-cover__content.app-cover__content--sm
+    .container
+      a.btn.btn-link--white.btn-collapse href="/"
+        i.ics.ics-angle-left
+        | All plans
+    .container.text-center
+      .app-cover__content-icon.text-center
+        i.ics.ics-bridge
+      h1.app-cover__content-title
+        | Security Integrator Plan
+      h2.app-cover__content-subtitle
+        | Pay only for the data that you use accross all of your clients
+.cards__container.cards__container--primary-vertical
+  .container
+    .row
+      .col-md-10
+        .row
+          .col-md-5.col-md-offset-3
+            .cards__item.cards__item--pricing
+              .cards__item-title.text-center
+                | $45
+                sup.text-muted.text-size-small
+                  | / month
+                p.text-center.text-size-small.text-muted
+                  | per TB
+              .cards__item-description
+                | Share data accross all  of your customers
+              .content-block
+                - ["Free data upload", "Unlimited email alerts", "100 sms alerts"].each do |f|
+                  .content-block-sm.text-size-small
+                    i.ics.ics-selected.text-muted.icon-size-10
+                    | &nbsp;
+                    = f
+              = link_to 'Subscribe now', '', class: 'btn btn-success cards__item--btn'
+.form__container.form__container--gray-lightest
+  .container
+    .row
+      .col-md-4.col-md-offset-4
+        .content-container
+          .content-block-sm.text-color-gray-dark
+            | Share your email address and we'll
+            br
+            | get in touch to help you choose
+          .input-group.input-group--plain
+            input.form-control type="email" placeholder="Your email"
+            .input-group-btn
+              button class="btn btn-link btn-link--blue-light btn-wide"
+                | Send
+
+= partial 'elements/footer'
