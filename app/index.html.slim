@@ -20,6 +20,8 @@
               = p.description.html_safe
             = link_to p.button.text, p.button.url, class: 'btn btn-success cards__item--btn'
             br
-            small.text-muted= p.pricing_hint
+            small.text-muted
+              | &nbsp;
+              = p.pricing_hint
 
 = partial 'elements/footer'
