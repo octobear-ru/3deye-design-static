@@ -7,7 +7,7 @@
 .form__container--gray-lightest
   background: $c-gray-lightest
 
-@each $type in text, email, number, tel
+@each $type in text, email, number, tel, password
   input[type="#{$type}"]
     &.form-control
       color: $text-color
@@ -23,3 +23,11 @@
     &:first-child,
     &:last-child
       border-radius: $input-border-radius $input-border-radius $input-border-radius $input-border-radius
+
+.radio,
+.checkbox
+  label
+    font:
+      size: $font-size-small
+      weight: 200
+    color: $gray

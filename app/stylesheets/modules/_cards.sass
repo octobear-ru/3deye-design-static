@@ -23,8 +23,6 @@
   margin:
     left: - $grid-gutter-width
     right: - $grid-gutter-width
-//.cards__item--pricing
-  height: 320px
 
 .cards__item--btn
   padding: 12px 30px
@@ -52,9 +50,17 @@
   margin-bottom: 25px
   color: $gray
 
-.cards__item-side-description
+.cards__item-description
   color: rgba(#fff, 0.8)
   font-size: $font-size-small
+  a
+    font-weight: 600
+    &, &:focus
+      color: rgba(#fff, 0.8)
+    &:hover
+      color: #fff
+
+.cards__item-description--side
   padding-top: $grid-gutter-width
   @media screen and (min-width: $screen-md-min)
     padding-top: 72px
