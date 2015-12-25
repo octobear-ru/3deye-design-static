@@ -3,9 +3,9 @@ squarespace:
   icon: "{icon}"
   description: "{description}"
   button:
-    text: "{button.text}"
-    url: "{button.url}"
-  pricing_hint: "{pricing.hint}"
+    text: "{buttonText}"
+    url: "{buttonUrl}"
+  pricing_hint: "{pricingHint}"
 
 static:
   -
