@@ -18,11 +18,10 @@
   .container
     .row
       - if target? :squarespace
-        /= partial 'blocks/plan_card', locals: {p: data.plans.squarespace}
-        squarespace:block-field id="planCard" columns="12"
+        = partial 'collections/plan_list'
       - else
         - data.plans.static.each do |p|
-          = partial 'blocks/plan_card', locals: {p: p}
+          = partial 'collections/plan_item', locals: {p: p}
 .form__container.form__container--gray-lightest
   .container
     .row

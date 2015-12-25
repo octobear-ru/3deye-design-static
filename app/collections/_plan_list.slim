@@ -1,0 +1,12 @@
+---
+layout: partial
+---
+
+- if target? :squarespace
+  | {.repeated section plan}
+
+= partial 'collections/plan_item', locals: {p: data.plans.squarespace}
+
+- if target? :squarespace
+  | {.end}
+
