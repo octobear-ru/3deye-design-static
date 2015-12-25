@@ -3,20 +3,38 @@ layout: partial
 ---
 
 - p = locals[:p] || data.plans.squarespace
-| {.section plan}
+/| {.section plan}
 
 .col-md-4
   .cards__item.text-center
     .cards__item-icon
-      i.ics class="ics-#{p.icon}"
+      - if target? :squarespace
+        squarespace:block-field id="cards__item-#{i}-icon" columns="12" lock-layout="true"
+        = "{cards__item-#{i}-icon}"
+      - else
+        i.ics class="ics-#{p.icon}"
     .cards__item-title
-      = p.title
+      - if target? :squarespace
+        squarespace:block-field id="cards__item-#{i}-title" columns="12" lock-layout="true"
+        = "{cards__item-#{i}-title}"
+      - else
+        = p.title
     .cards__item-description
-      = p.description.html_safe
-    = link_to p.button.text, p.button.url, class: 'btn btn-success cards__item--btn'
+      - if target? :squarespace
+        squarespace:block-field id="cards__item-#{i}-description" columns="12" lock-layout="true"
+        = "{cards__item-#{i}-description}"
+      - else
+        = p.description.html_safe
+    - unless if target? :squarespace
+      = link_to p.button.text, p.button.url, class: 'btn btn-success cards__item--btn'
     br
     small.text-muted
       | &nbsp;
-      = p.pricing_hint
+      - if target? :squarespace
+        squarespace:block-field id="cards__item-#{i}-pricing-hint" columns="12" lock-layout="true"
+        = "{cards__item-#{i}-pricing-hint}"
+      - else
+        = p.pricing_hint
 
-| {.end}
+
+/| {.end}
