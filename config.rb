@@ -88,10 +88,10 @@ configure :build do
   ignore ".git"
   # TODO transfer all to app folder and ignore it on build
 
-  activate :minify_css
+  #activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  #activate :minify_javascript
 
   # Enable cache buster
   activate :cache_buster
