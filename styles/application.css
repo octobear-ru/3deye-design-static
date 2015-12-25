@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "open sans";
-  src: url("../fonts/opensans-light-webfont.eot");
-  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype");
+  src: url("/assets/opensans-light-webfont.eot");
+  src: url("/assets/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype");
   font-weight: 200;
   font-style: normal; }
 /* line 12, /Users/Alexander/Documents/code/3deye-plans-static/app/stylesheets/settings/fonts/_opensans.sass */
@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: "open sans";
-  src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype");
+  src: url("/assets/opensans-regular-webfont.eot");
+  src: url("/assets/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 /* line 12, /Users/Alexander/Documents/code/3deye-plans-static/app/stylesheets/settings/fonts/_opensans.sass */
@@ -23,8 +23,8 @@
 
 @font-face {
   font-family: "open sans";
-  src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype");
+  src: url("/assets/opensans-bold-webfont.eot");
+  src: url("/assets/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 /* line 12, /Users/Alexander/Documents/code/3deye-plans-static/app/stylesheets/settings/fonts/_opensans.sass */
@@ -343,8 +343,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("/assets/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("/assets/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 /* line 24, /Users/Alexander/Documents/code/3deye-plans-static/app/vendor/components/bootstrap-sass-official/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
   position: relative;
@@ -7427,8 +7427,8 @@ hr {
 
 @font-face {
   font-family: "3deye-icons";
-  src: url("../fonts/3deye-icons.eot?14409873");
-  src: url("../fonts/3deye-icons.eot?14409873#iefix") format("embedded-opentype"), url("../fonts/3deye-icons.woff?14409873") format("woff"), url("../fonts/3deye-icons.ttf?14409873") format("truetype");
+  src: url("/assets/3deye-icons.eot?14409873");
+  src: url("/assets/3deye-icons.eot?14409873#iefix") format("embedded-opentype"), url("../fonts/3deye-icons.woff?14409873") format("woff"), url("../fonts/3deye-icons.ttf?14409873") format("truetype");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -7855,7 +7855,7 @@ input[type="password"].form-control {
 .app-navbar__brand-image, .app-footer__brand-image {
   display: inline-block;
   background-size: contain;
-  background-image: url("../images/logo-large-white@2x.png?1450880314");
+  background-image: url("/assets/logo-large-white@2x.png?1450880314");
   background-repeat: no-repeat;
   width: 106px;
   height: 45px; }
@@ -7909,7 +7909,7 @@ input[type="password"].form-control {
 
 /* line 12, /Users/Alexander/Documents/code/3deye-plans-static/app/stylesheets/modules/_app-cover.sass */
 .app-cover--plans {
-  background-image: url("../images/plans-cover.jpg?1450880314"); }
+  background-image: url("/assets/plans-cover.jpg?1450880314"); }
 
 /* line 16, /Users/Alexander/Documents/code/3deye-plans-static/app/stylesheets/modules/_app-cover.sass */
 .app-cover__content {
