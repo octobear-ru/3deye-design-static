@@ -18,12 +18,10 @@
   .container
     .row
       - if target? :squarespace
-        | {.repeated section plan}
-        = partial 'elements/plan_card', locals: {p: data.plans.squarespace}
-        | {.end}
+        = partial 'blocks/plan_card', locals: {p: data.plans.squarespace}
       - else
         - data.plans.static.each do |p|
-          = partial 'elements/plan_card', locals: {p: p}
+          = partial 'blocks/plan_card', locals: {p: p}
 .form__container.form__container--gray-lightest
   .container
     .row
