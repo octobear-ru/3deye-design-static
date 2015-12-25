@@ -9,6 +9,12 @@ mv stylesheets styles
 mv javascripts scripts
 mkdir assets
 mv {images,fonts}/*.* assets/
+perl -i -p -e "s/\.\.\/images/\/assets/" styles/*.*
+perl -i -p -e "s/\.\.\/fonts/\/assets/" styles/*.*
+for file in *.html
+do
+ mv "$file" "${file%.html}.region"
+done
 git add -A
 git commit -m 'build'
 git push -f squarespace $tmp_branch:master

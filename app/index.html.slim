@@ -4,12 +4,14 @@
     .container.text-center
       h1.app-cover__content-title
         - if target? :squarespace
-          | {app-cover__content-title}
+          squarespace:block-field id="app-cover__content-title" columns="12" lock-layout="true"
+            | {app-cover__content-title}
         - else
           | Select your VSaaS plan
       h2.app-cover__content-subtitle
         - if target? :squarespace
-          | {app-cover__content-subtitle}
+          squarespace:block-field id="app-cover__content-subtitle" columns="12" lock-layout="true"
+            | {app-cover__content-subtitle}
         - else
           | Pick a value plan that works for your Company
 .cards__container.cards__container--primary

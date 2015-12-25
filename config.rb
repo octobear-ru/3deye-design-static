@@ -52,6 +52,7 @@ set :layout, :application
 
 ##############################
 # Dynamically Generated Pages
+
 activate :directory_indexes  #Removes .html from file
 
 ##############################
