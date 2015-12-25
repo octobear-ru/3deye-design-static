@@ -1,3 +1,14 @@
+%page-section
+  padding:
+    top: 50px
+    bottom: 54px
+
+%container--dark-shadow
+  box-shadow: inset 0 -1px 0 rgba(#000, 0.2), inset 0 1px 0 rgba(#fff, 0.15)
+
+%container--light-shadow
+  box-shadow: inset 0 -1px 0 rgba(#fff, 0.2), inset 0 1px 0 rgba(#000, 0.1)
+
 body
   background-color: $body-background
 
@@ -9,11 +20,6 @@ hr
 
 .center-block-content
   +center-block-content
-
-%page-section
-  padding:
-    top: 50px
-    bottom: 54px
 
 .page-section
   @extend %page-section
