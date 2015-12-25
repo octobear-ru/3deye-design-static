@@ -5,6 +5,10 @@ git branch -D $tmp_branch
 git checkout -b $tmp_branch
 rm -rf package.json gulpfile.* bower.json app Gemfile Gemfile.lock Guardfile Rakefile config/ config.rb config.ru data/
 cp -r build/* .
+mv stylesheets styles
+mv javascripts scripts
+mkdir assets
+mv {images,fonts}/*.* assets/
 git add -A
 git commit -m 'build'
 git push -f squarespace $tmp_branch:master
