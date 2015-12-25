@@ -20,7 +20,7 @@
         = partial 'elements/plan_card', locals: {p: data.plans.squarespace}
         | {.end}
       - else
-        - data.plans.each do |p|
+        - data.plans.static.each do |p|
           = partial 'elements/plan_card', locals: {p: p}
 .form__container.form__container--gray-lightest
   .container
