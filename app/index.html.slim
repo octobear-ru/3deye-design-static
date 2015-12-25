@@ -18,6 +18,8 @@
   .container
     .row
       - if target? :squarespace
+        squarespace:block-field id="app__plans-list" columns="12" lock-layout="true"
+        | {app__plans-list}
         | {.repeated section plan}
         = partial 'blocks/plan_item', locals: {p: data.plans.squarespace}
         | {.end}
