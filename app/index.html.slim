@@ -19,11 +19,8 @@
     .row
       - if target? :squarespace
         | {.repeated section plan}
-        = partial 'collections/plan_item', locals: {p: data.plans.squarespace}
+        = partial 'blocks/plan_item', locals: {p: data.plans.squarespace}
         | {.end}
-
-      - if target? :squarespace
-
         /= partial 'blocks/plan_list'
         /squarespace:block-field id="plan" columns="12" lock-layout="true"
       - else
