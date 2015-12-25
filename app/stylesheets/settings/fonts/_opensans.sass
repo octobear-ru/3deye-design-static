@@ -1,13 +1,17 @@
-$font-opensans: 'Open Sans'
-$font-opensans-variants: (200 Light, 400 Regular, 600 Bold)
+$font-opensans: 'open sans'
+$font-opensans-variants: (200 light, 400 regular, 600 bold)
 
 @each $f in $font-opensans-variants
   @font-face
     font-family: $font-opensans
-    src: asset-url('OpenSans-#{nth($f,2)}-webfont.eot', font)
-    src: asset-url('OpenSans-#{nth($f,2)}-webfont.eot?#iefix', font) format("embedded-opentype"), asset-url('OpenSans-#{nth($f,2)}-webfont.woff', font) format("woff"), asset-url('OpenSans-#{nth($f,2)}-webfont.ttf', font) format("truetype")
-    //, asset-url('OpenSans-#{nth($f,2)}-webfont.svg#helveticaneuecyr#{nth($f,2)}-webfont') format("svg")
+    src: asset-url('opensans-#{nth($f,2)}-webfont.eot', font)
+    src: asset-url('opensans-#{nth($f,2)}-webfont.eot?#iefix', font) format("embedded-opentype"), asset-url('opensans-#{nth($f,2)}-webfont.woff', font) format("woff"), asset-url('opensans-#{nth($f,2)}-webfont.ttf', font) format("truetype")
+    //, asset-url('opensans-#{nth($f,2)}-webfont.svg#helveticaneuecyr#{nth($f,2)}-webfont') format("svg")
     font-weight: nth($f,1)
     font-style: normal
+  .text-main-#{nth($f,2)}
+    font:
+      family: $font-opensans
+      weight: nth($f,1)
 
 

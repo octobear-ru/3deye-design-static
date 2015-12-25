@@ -1,21 +1,21 @@
 .btn-success
-  background: linear-gradient(0deg, $gradient-success-top, $gradient-success-bottom)
+  background: linear-gradient(180deg, $gradient-success-top, $gradient-success-bottom)
   box-shadow: inset 0 0 0 1px rgba(#000, 0.1)
   text-shadow: 0 1px 0 rgba(#000, 0.1)
   transition: box-shadow 0.2s ease
   &, &:hover, &:focus
     border: none
   &:hover
-    box-shadow: inset 0 0 1px 1px rgba(#000, 0.2), inset 0 0 0 500px rgba($gradient-success-top, 0.5)
+    box-shadow: inset 0 0 0 1px rgba(#000, 0.1), inset 0 0 0 500px lighten($gradient-success-top, 3%)
 
 .btn-primary
-  background: linear-gradient(0deg, $gradient-primary-top, $gradient-primary-bottom)
+  background: linear-gradient(180deg, $gradient-primary-top, $gradient-primary-bottom)
   box-shadow: inset 0 0 0 1px rgba(#000, 0.1)
   text-shadow: 0 1px 0 rgba(#000, 0.1)
   &, &:hover, &:focus
     border: none
   &:hover
-    box-shadow: inset 0 0 1px 1px rgba(#000, 0.2), inset 0 0 0 500px rgba($gradient-primary-top, 0.5)
+    box-shadow: inset 0 0 0 1px rgba(#000, 0.2), inset 0 0 0 500px rgba($gradient-primary-top, 0.5)
 
 .btn-link
   color: $link-color
