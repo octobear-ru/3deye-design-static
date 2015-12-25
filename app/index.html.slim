@@ -18,10 +18,17 @@
   .container
     .row
       - if target? :squarespace
-        = partial 'collections/plan_list'
+        | {.repeated section plan}
+        = partial 'collections/plan_item', locals: {p: data.plans.squarespace}
+        | {.end}
+
+      - if target? :squarespace
+
+        /= partial 'blocks/plan_list'
+        /squarespace:block-field id="plan" columns="12" lock-layout="true"
       - else
         - data.plans.static.each do |p|
-          = partial 'collections/plan_item', locals: {p: p}
+          = partial 'blocks/plan_item', locals: {p: p}
 .form__container.form__container--gray-lightest
   .container
     .row
