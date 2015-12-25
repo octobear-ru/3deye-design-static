@@ -1,33 +1,43 @@
--
-  title: Corporate
-  icon: building-large
-  description: |
-    Large organization requiring special
-    <br>
-    features and tailored service
+squarespace:
+  title: "{title}"
+  icon: "{icon}"
+  description: "{description}"
   button:
-    text: Contact me
-    url: corporate
--
-  title: Security Integrator
-  icon: bridge
-  description: |
-    Flexible data plan to provide
-    <br>
-    the best service to your clients
-  button:
-    text: Show pricing
-    url: security-integrator
-  pricing_hint: starting from $45/mo
--
-  title: Business Owner
-  icon: building
-  description: |
-    Reliable service at a fixed
-    <br>
-    price per camera
-  button:
-    text: Show plans
-    url: business-owner
-  pricing_hint: starting from $7/mo
+    text: "{button.text}"
+    url: "{button.url}"
+  pricing_hint: "{pricing.hint}"
+
+static:
+  -
+    title: Corporate
+    icon: building-large
+    description: |
+      Large organization requiring special
+      <br>
+      features and tailored service
+    button:
+      text: Contact me
+      url: corporate
+  -
+    title: Security Integrator
+    icon: bridge
+    description: |
+      Flexible data plan to provide
+      <br>
+      the best service to your clients
+    button:
+      text: Show pricing
+      url: security-integrator
+    pricing_hint: starting from $45/mo
+  -
+    title: Business Owner
+    icon: building
+    description: |
+      Reliable service at a fixed
+      <br>
+      price per camera
+    button:
+      text: Show plans
+      url: business-owner
+    pricing_hint: starting from $7/mo
 

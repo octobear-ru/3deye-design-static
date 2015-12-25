@@ -3,26 +3,25 @@
   .app-cover__content
     .container.text-center
       h1.app-cover__content-title
-        | Select your VSaaS plan
+        - if target? :squarespace
+          | {app-cover__content-title}
+        - else
+          | Select your VSaaS plan
       h2.app-cover__content-subtitle
-        | Pick a value plan that works for your Company
+        - if target? :squarespace
+          | {app-cover__content-subtitle}
+        - else
+          | Pick a value plan that works for your Company
 .cards__container.cards__container--primary
   .container
     .row
-      - data.plans.each do |p|
-        .col-md-4
-          .cards__item.text-center
-            .cards__item-icon
-              i.ics class="ics-#{p.icon}"
-            .cards__item-title
-              = p.title
-            .cards__item-description
-              = p.description.html_safe
-            = link_to p.button.text, p.button.url, class: 'btn btn-success cards__item--btn'
-            br
-            small.text-muted
-              | &nbsp;
-              = p.pricing_hint
+      - if target? :squarespace
+        | {.repeated section plan}
+        = partial 'elements/plan_card', locals: {p: data.plans.squarespace}
+        | {.end}
+      - else
+        - data.plans.each do |p|
+          = partial 'elements/plan_card', locals: {p: p}
 .form__container.form__container--gray-lightest
   .container
     .row

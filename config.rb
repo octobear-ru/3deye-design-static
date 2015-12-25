@@ -8,6 +8,7 @@
 require 'config/helpers'
 require 'builder'
 require "better_errors"
+require 'middleman-target'
 
 helpers do
   include ApplicationHelpers
@@ -27,6 +28,7 @@ module Haml::Filters::Markdown
   end
 end
 
+activate :target
 
 set :source_dir, 'app'
 set :source, 'app'

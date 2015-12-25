@@ -1,0 +1,16 @@
+- p = locals[:p]
+
+.col-md-4
+  .cards__item.text-center
+    .cards__item-icon
+      i.ics class="ics-#{p.icon}"
+    .cards__item-title
+      = p.title
+    .cards__item-description
+      = p.description.html_safe
+    = link_to p.button.text, p.button.url, class: 'btn btn-success cards__item--btn'
+    br
+    small.text-muted
+      | &nbsp;
+      = p.pricing_hint
+
