@@ -1,4 +1,14 @@
-### FShop static
+### 3deye static
+
+### Libs
+
+bootstrap 3.3.1 (included in application.css)
+
+jquery 2.1.4
+
+https://github.com/kossnocorp/role
+
+https://github.com/cloudfour/hideShowPassword 2.0.8
 
 ### Install dependencies
 
