@@ -1,5 +1,0 @@
-#!/bin/bash
-bundle exec middleman build
-rm -rf dist
-cp -r build/stylesheets/application.css dist/
-cp -r build/javascripts/application.js dist/
