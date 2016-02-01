@@ -1,5 +1,5 @@
 ---
-title: Sign in
+title: Sign up
 ---
 
 .cards__container.page-section--fixed.cards__container--primary.cards__container--primary-vertical
@@ -10,24 +10,17 @@ title: Sign in
       .col-lg-4.col-lg-offset-4.col-sm-6.col-sm-offset-3
         .cards__item
           .text-center.text-size-large.text-main-regular.content-block
-            | Sign in to your account
+            | Create your account
           form
             .content-block
               input.form-control.content-block-sm type="email" placeholder="Email"
               input.form-control.content-block-sm type="password" placeholder="Password" role="password-toggle"
-              .checkbox
-                label
-                  input type="checkbox" checked="checked"
-                  | Remember me
             .text-center
-                input type="submit" value="Sign in" class="btn btn-success cards__item--btn"
+              input type="submit" value="Create your account" class="btn btn-success cards__item--btn"
 
         .cards__container-description
           .content-paragraph
-            | Don’t have an account?
+            | Already have an account?
             | &nbsp;&nbsp;
-            a href="../sign-up"
-              | Sign up
-          .content-paragraph
-            a href="../forgot-password"
-              | Forgot your password?
+            a href="../sign-in"
+              | Sign in
