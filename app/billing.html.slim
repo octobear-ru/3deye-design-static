@@ -1,0 +1,47 @@
+---
+title: Business Info — Sign up
+---
+.page-section--fixed.cards__container--primary.cards__container--primary-vertical
+  .content-block
+    = partial 'elements/app_nav'
+    .container
+      h2.app-cover__content-subtitle.text-center
+        | Please let us know a bit more about your business
+  .content-block.text-center
+    .breadcrumbs-steps.breadcrumbs-steps--white
+      a.breadcrumbs-steps__item-link(href="../business-info")
+        | Business Info
+      i.ics.ics-angle-right.breadcrumbs-steps__divider
+      a.breadcrumbs-steps__item-link.breadcrumbs-steps__item-link--active(href="../billing")
+        | Billing
+      i.ics.ics-angle-right.breadcrumbs-steps__divider
+      a.breadcrumbs-steps__item-link(href="../confirmation")
+        | Confirmation
+
+  .container
+    .row
+      .col-lg-4.col-lg-offset-4.col-sm-6.col-sm-offset-3
+        .cards__item
+          form(action="../billing" role="signup-validator")
+            .content-block
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="text" placeholder="Billing Name"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="text" placeholder="Card Owner Name" required="required"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="number" placeholder="Card Number" required="required"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+            .text-center
+              input type="submit" value="Create your account" class="btn btn-success cards__item--btn"
+
+        .cards__container-description
+          .content-paragraph
+            | Already have an account?
+            | &nbsp;&nbsp;
+            a href="../sign-in"
+              | Sign in

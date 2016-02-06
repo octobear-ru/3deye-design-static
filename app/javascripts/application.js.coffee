@@ -1,6 +1,7 @@
 #= require jquery/dist/jquery
 #= require jquery.role/lib/jquery.role
 #= require hideShowPassword/hideShowPassword.min
+#= require bootstrap-validator/dist/validator
 
 window.App ||= {}
 
@@ -14,10 +15,15 @@ window.App ||= {}
       states:
         shown:
           toggle:
-            content: '<i class="ics ics-shown"></i>'
+            content: '<i class="ics ics-shown form-control-password-toggle-icon form-control-password-toggle-icon--shown"></i>'
         hidden:
           toggle:
-            content: '<i class="ics ics-hidden"></i>'
+            content: '<i class="ics ics-hidden form-control-password-toggle-icon form-control-password-toggle-icon--hidden"></i>'
+
+    $('@signup-validator').validator
+      feedback:
+        success: 'ics ics-selected form-control-validator-icons'
+        error: 'ics ics-cancel form-control-validator-icons'
 
 )(window.App ||={})
 

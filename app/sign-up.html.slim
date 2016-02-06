@@ -11,10 +11,15 @@ title: Sign up
         .cards__item
           .text-center.text-size-large.text-main-regular.content-block
             | Create your account
-          form
+          form(action="../business-info" role="signup-validator")
             .content-block
-              input.form-control.content-block-sm type="email" placeholder="Email"
-              input.form-control.content-block-sm type="password" placeholder="Password" role="password-toggle"
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="email" placeholder="Email"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="password" placeholder="Password (min 6 characters)" role="password-toggle" data-minlength="6"
+                .help-block.with-errors
             .text-center
               input type="submit" value="Create your account" class="btn btn-success cards__item--btn"
 
