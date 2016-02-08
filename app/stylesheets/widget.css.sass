@@ -8,6 +8,8 @@
 @import settings/fonts
 
 .tde-auth-widget
+  @import cleanslate/cleanslate
+  @extend .cleanslate
   @import bootstrap-sass-official/assets/stylesheets/bootstrap/normalize
   @import bootstrap-sass-official/assets/stylesheets/bootstrap/scaffolding
   @import bootstrap-sass-official/assets/stylesheets/bootstrap/forms
@@ -32,15 +34,18 @@
     font-size: $font-size-large
     margin-bottom: $grid-gutter-width
 
+  .tde-auth-widget__form-submit-block
+    text-align: center
+
   .tde-auth-widget__form-submit-block-btn
     @extend .btn
     @extend .btn-success
     @extend %cards__item--btn
-    text-align: center
 
   .tde-auth-widget__card__links-block
     font-size: $font-size-small
     color: $text-muted
+    margin-bottom: 0.5em
 
   .tde-auth-widget__card__link
     font-weight: bold

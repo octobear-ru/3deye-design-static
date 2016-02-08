@@ -14,5 +14,8 @@
     "**/.*",
     "node_modules",
     "components"
-  ]
+  ],
+  "devDependencies": {
+    "cleanslate": "^0.10.1"
+  }
 }
