@@ -1,0 +1,27 @@
+= form-elements-shared
+  @each $type in text, email, number, tel, password
+    input[type="#{$type}"]
+      &.form-control
+        color: $text-color
+        &, &:hover, &:focus
+          box-shadow: none
+          outline: none
+          border: 1px solid $c-gray-light
+        &:focus
+          border-color: $brand-primary
+
+  .input-group--plain
+    .form-control
+      &:first-child,
+      &:last-child
+        border-radius: $input-border-radius $input-border-radius $input-border-radius $input-border-radius
+
+  .radio,
+  .checkbox
+    label
+      font:
+        size: $font-size-small
+        weight: 200
+      color: $gray
+
+

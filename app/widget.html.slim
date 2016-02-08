@@ -1,0 +1,27 @@
+---
+layout: widget
+---
+
+.tde-auth-widget
+  .tde-auth-widget__card
+    .tde-auth-widget__card__title
+      | Sign in to your account
+    form
+      .content-block-sm
+        input.form-control.content-block-sm type="email" placeholder="Email"
+        input.form-control.content-block-sm type="password" placeholder="Password" role="password-toggle"
+        .checkbox
+          label
+            input type="checkbox" checked="checked"
+            | Remember me
+      .tde-auth-widget__form-submit-block.content-block
+        input type="submit" value="Sign in" class="tde-auth-widget__form-submit-block-btn"
+
+    .tde-auth-widget__card__links-block
+      | Don’t have an account?
+      | &nbsp;&nbsp;
+      a.tde-auth-widget__card__link href="../sign-up"
+        | Sign up
+    .tde-auth-widget__card__links-block
+      a.tde-auth-widget__card__link href="../forgot-password"
+        | Forgot your password?

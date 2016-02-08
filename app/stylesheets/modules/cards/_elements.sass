@@ -10,7 +10,7 @@
   background: linear-gradient(180deg, $gradient-primary-top, $gradient-primary-bottom)
 
 .cards__item
-  @extend %cards__item
+  @extend %cards__item-style
 
 .cards__item-divider
   margin:
@@ -18,7 +18,9 @@
     right: - $grid-gutter-width
 
 .cards__item--btn
-  @extend %cards__item--btn
+  padding: 12px 30px
+  font-size: $font-size-base
+  margin-bottom: 5px
 
 .cards__item-icon
   margin-bottom: 14px
