@@ -4,9 +4,6 @@ title: Business Info — Sign up
 .page-section--fixed.cards__container--primary.cards__container--primary-vertical
   .content-block
     = partial 'elements/app_nav'
-    .container
-      h2.app-cover__content-subtitle.text-center
-        | Please let us know a bit more about your business
   .content-block.text-center
     .breadcrumbs-steps.breadcrumbs-steps--white
       a.breadcrumbs-steps__item-link.breadcrumbs-steps__item-link--active(href="../business-info")
@@ -17,7 +14,9 @@ title: Business Info — Sign up
       i.ics.ics-angle-right.breadcrumbs-steps__divider
       a.breadcrumbs-steps__item-link(href="../confirmation")
         | Confirmation
-
+  //.container.content-block
+    h2.app-cover__content-subtitle.text-center
+      | Please let us know a bit more about your business
   .container
     .row
       .col-lg-4.col-lg-offset-4.col-sm-6.col-sm-offset-3
