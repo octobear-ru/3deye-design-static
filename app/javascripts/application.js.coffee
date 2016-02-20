@@ -2,10 +2,13 @@
 #= require jquery.role/lib/jquery.role
 #= require hideShowPassword/hideShowPassword.min
 #= require bootstrap-validator/dist/validator
+#= require purl/purl
 
 window.App ||= {}
 
 ((app) ->
+  url = $.url()
+
   $(document).ready ->
     $('@password-toggle').hideShowPassword
       show: false
@@ -24,6 +27,12 @@ window.App ||= {}
       feedback:
         success: 'ics ics-selected form-control-validator-icons'
         error: 'ics ics-cancel form-control-validator-icons'
+
+    $('@signup-partner-background').each ->
+      hue = parseInt url.data.param.query.hue
+      primary = "hsl(#{hue}, 53%, 47%)"
+      secondary = "hsl(#{hue - 19}, 53%, 47%)"
+      $(@).css 'background', "linear-gradient(150deg, #{primary}, #{secondary})"
 
 )(window.App ||={})
 

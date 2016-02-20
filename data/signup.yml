@@ -1,0 +1,10 @@
+steps:
+  business_info:
+    title: 'Business Info'
+    url: '../business-info'
+  billing:
+    title: 'Billing'
+    url: '../billing'
+  start:
+    title: 'Start using'
+    url: '../'

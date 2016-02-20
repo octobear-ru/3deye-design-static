@@ -16,6 +16,7 @@
     "components"
   ],
   "devDependencies": {
-    "cleanslate": "^0.10.1"
+    "cleanslate": "^0.10.1",
+    "purl": "^2.3.1"
   }
 }

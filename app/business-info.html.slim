@@ -5,15 +5,7 @@ title: Business Info — Sign up
   .content-block
     = partial 'elements/app_nav'
   .content-block.text-center
-    .breadcrumbs-steps.breadcrumbs-steps--white
-      a.breadcrumbs-steps__item-link.breadcrumbs-steps__item-link--active(href="../business-info")
-        | Business Info
-      i.ics.ics-angle-right.breadcrumbs-steps__divider
-      a.breadcrumbs-steps__item-link(href="../billing")
-        | Billing
-      i.ics.ics-angle-right.breadcrumbs-steps__divider
-      a.breadcrumbs-steps__item-link(href="../confirmation")
-        | Confirmation
+    = partial 'elements/signup-steps', locals: {active: :business_info}
   //.container.content-block
     h2.app-cover__content-subtitle.text-center
       | Please let us know a bit more about your business
@@ -37,9 +29,4 @@ title: Business Info — Sign up
             .text-center
               input type="submit" value="Create your account" class="btn btn-success cards__item--btn"
 
-        .cards__container-description
-          .content-paragraph
-            | Already have an account?
-            | &nbsp;&nbsp;
-            a href="../sign-in"
-              | Sign in
+        = partial 'elements/signup-links'
