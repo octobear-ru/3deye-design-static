@@ -1,0 +1,43 @@
+---
+title: Sign up
+---
+
+.tdy-form__container.cards__container--primary.cards__container--primary-vertical
+  .container
+    .row
+      .col-lg-6.col-lg-offset-3.col-sm-8.col-sm-offset-2
+        .cards__item.tdy-form-card
+          .text-center
+            = link_to '', '', class: 'tdy-form-logo'
+          .tdy-form-title.text-center
+            | Create your account
+          form(action="")
+            .content-block
+              .tdy-form-control-block
+                input.tdy-form-control.tdy-form-control--with-icon type="text" placeholder="Your Name"
+                i.ics.ics-client-user-o.tdy-form-control__icon.tdy-form-control__icon--name
+              .tdy-form-control-block
+                input.tdy-form-control.tdy-form-control--with-icon type="email" placeholder="Your Email"
+                i.ics.ics-client-letter-o.tdy-form-control__icon.tdy-form-control__icon--email
+              .tdy-form-control-block
+                input.tdy-form-control.tdy-form-control--with-icon type="password" placeholder="Create Password" data-minlength="6"
+                i.ics.ics-client-lock-o.tdy-form-control__icon.tdy-form-control__icon--password
+            .content-block
+              input type="submit" value="Create your account" class="btn tdy-form__submit-btn"
+
+            .content-paragraph
+              small
+                | By signing up, I agree to
+                a href="../terms-and-conditions"
+                  nobr
+                  |  Terms and Conditions
+                |  and
+                a href="../privacy-policy"
+                  nobr
+                    |  Privacy Policy
+            .content-paragraph
+              | Already have an account?
+              | &nbsp;&nbsp;
+              a href="../sign-in"
+                | Sign in
+
