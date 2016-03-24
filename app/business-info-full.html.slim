@@ -10,24 +10,25 @@ title: Sign up
       .col-lg-6.col-lg-offset-3.col-sm-8.col-sm-offset-2
         .cards__item
           .text-center.text-size-large.text-main-regular.content-block
-            | Business info
+            //| Business info
+            | Create account
           form(action="../business-info" role="signup-validator")
             .content-block
-              //
-                .form-group.has-feedback.content-block-sm
-                  input.form-control type="email" placeholder="Email"
-                  i.form-control-feedback aria-hidden="true"
-                  .help-block.with-errors
-                .form-group.has-feedback.content-block-sm
-                  input.form-control type="text" placeholder="Name"
-                  i.form-control-feedback aria-hidden="true"
-                  .help-block.with-errors
-                .form-group.has-feedback.content-block-sm
-                  input.form-control type="password" placeholder="Password (min 6 characters)" data-minlength="6"
-                  .help-block.with-errors
-                .form-group.has-feedback.content-block-sm
-                  input.form-control type="password" placeholder="Confirm Password" data-minlength="6"
-                  .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="email" placeholder="Email"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="text" placeholder="Name"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="password" placeholder="Password (min 6 characters)" data-minlength="6"
+                .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="password" placeholder="Confirm Password" data-minlength="6"
+                .help-block.with-errors
+              hr
               .row
                 .col-sm-6
                   .form-group.has-feedback.content-block-sm
@@ -68,6 +69,32 @@ title: Sign up
                   .form-group.has-feedback.content-block-sm
                     select.form-control type="text" placeholder="Country"
                       = partial 'elements/country_select_options'
+              hr
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="text" placeholder="Billing Name"
+              .checkbox.content-block-sm
+                label
+                  input type="checkbox" checked="checked"
+                  | Send bills to Business address
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="text" placeholder="Card Owner Name" required="required"
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="number" placeholder="Card Number" required="required"
+              .form-group.has-feedback.content-block-sm
+                label.form-label
+                  | Expiry
+                .row
+                  .col-xs-6
+                    select.form-control required="required"
+                      - for i in 1..12
+                        option= i
+                  .col-xs-6
+                    select.form-control required="required"
+                      - for i in 2016..2026
+                        option= i
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="number" placeholder="CVC/CVV" required="required"
+
 
             .text-center
               input type="submit" value="Create your account" class="btn btn-success cards__item--btn"
