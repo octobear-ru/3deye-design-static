@@ -3,6 +3,7 @@
 #= require hideShowPassword/hideShowPassword.min
 #= require bootstrap-validator/dist/validator
 #= require purl/purl
+#= require data-toggle-hide
 
 window.App ||= {}
 

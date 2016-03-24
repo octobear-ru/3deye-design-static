@@ -1,0 +1,76 @@
+---
+title: Sign up
+---
+
+.cards__container.page-section--fixed.cards__container--primary.cards__container--primary-vertical
+  .text-center.content-block-lg
+    = link_to '', '', class: 'app-navbar__brand-image'
+  .container
+    .row
+      .col-lg-6.col-lg-offset-3.col-sm-8.col-sm-offset-2
+        .cards__item
+          .text-center.text-size-large.text-main-regular.content-block
+            | Business info
+          form(action="../business-info" role="signup-validator")
+            .content-block
+              //
+                .form-group.has-feedback.content-block-sm
+                  input.form-control type="email" placeholder="Email"
+                  i.form-control-feedback aria-hidden="true"
+                  .help-block.with-errors
+                .form-group.has-feedback.content-block-sm
+                  input.form-control type="text" placeholder="Name"
+                  i.form-control-feedback aria-hidden="true"
+                  .help-block.with-errors
+                .form-group.has-feedback.content-block-sm
+                  input.form-control type="password" placeholder="Password (min 6 characters)" data-minlength="6"
+                  .help-block.with-errors
+                .form-group.has-feedback.content-block-sm
+                  input.form-control type="password" placeholder="Confirm Password" data-minlength="6"
+                  .help-block.with-errors
+              .row
+                .col-sm-6
+                  .form-group.has-feedback.content-block-sm
+                    input.form-control type="text" placeholder="Business Name" required="required"
+                    i.form-control-feedback aria-hidden="true"
+                    .help-block.with-errors
+                .col-sm-6
+                  .form-group.has-feedback.content-block-sm
+                    input.form-control type="tel" placeholder="Phone Number" required="required"
+                    i.form-control-feedback aria-hidden="true"
+                    .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="text" placeholder="Location"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+              .form-group.has-feedback.content-block-sm
+                input.form-control type="text" placeholder="Address"
+                i.form-control-feedback aria-hidden="true"
+                .help-block.with-errors
+              .row
+                .col-sm-6
+                  .form-group.has-feedback.content-block-sm
+                    input.form-control type="text" placeholder="City/Town"
+                    i.form-control-feedback aria-hidden="true"
+                    .help-block.with-errors
+                .col-sm-6
+                  .form-group.has-feedback.content-block-sm
+                    input.form-control type="text" placeholder="State/Province"
+                    i.form-control-feedback aria-hidden="true"
+                    .help-block.with-errors
+              .row
+                .col-sm-6
+                  .form-group.has-feedback.content-block-sm
+                    input.form-control type="number" placeholder="Postal Code"
+                    i.form-control-feedback aria-hidden="true"
+                    .help-block.with-errors
+                .col-sm-6
+                  .form-group.has-feedback.content-block-sm
+                    select.form-control type="text" placeholder="Country"
+                      = partial 'elements/country_select_options'
+
+            .text-center
+              input type="submit" value="Create your account" class="btn btn-success cards__item--btn"
+
+        = partial 'elements/signup-links'
+
