@@ -9,9 +9,17 @@ title: Sign up
     .row
       .col-lg-6.col-lg-offset-3.col-sm-8.col-sm-offset-2
         .cards__item
-          .text-center.text-size-large.text-main-regular.content-block
-            //| Business info
-            | Create account
+          //.text-center.text-size-large.text-main-regular.content-block
+            | Account settings
+          .content-block.text-center
+            .tdy-btn-group
+              a.btn.btn-default.active
+                | Account settings
+              a.btn.btn-default
+                | Business info
+              a.btn.btn-default
+                | Billing
+
           form(action="../business-info" role="signup-validator")
             .content-block
               .form-group.has-feedback.content-block-sm
@@ -97,7 +105,7 @@ title: Sign up
 
 
             .text-center
-              input type="submit" value="Create your account" class="btn btn-success cards__item--btn"
+              input type="submit" value="Save" class="btn btn-success cards__item--btn"
 
         = partial 'elements/signup-links'
 
