@@ -1,5 +1,6 @@
 #= require jquery/dist/jquery
 #= require jquery.role/lib/jquery.role
+#= require bootstrap-sass-official/assets/javascripts/bootstrap
 #= require hideShowPassword/hideShowPassword.min
 #= require bootstrap-validator/dist/validator
 #= require purl/purl
@@ -34,6 +35,12 @@ window.App ||= {}
       primary = "hsl(#{hue}, 53%, 47%)"
       secondary = "hsl(#{hue - 19}, 53%, 47%)"
       $(@).css 'background', "linear-gradient(150deg, #{primary}, #{secondary})"
+
+
+    $('[data-toggle*="collapse"]').on 'click', (e) ->
+      e.preventDefault()
+      target = $(@).attr('href') || $(@).data('target')
+      $(target).collapse('toggle')
 
 )(window.App ||={})
 
