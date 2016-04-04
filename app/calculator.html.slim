@@ -7,7 +7,7 @@ title: Pricing Calculator
     = link_to '', '', class: 'app-navbar__brand-image'
   .container
     .row
-      .col-lg-6.col-lg-offset-3.col-sm-8.col-sm-offset-2
+      .col-sm-8.col-sm-offset-2
         .cards__item
           .text-center.text-size-large.text-main-regular.content-block
             | Camera pricing calculator
@@ -21,15 +21,15 @@ title: Pricing Calculator
                   .col-sm-6.col-md-8
                     .tdy-radio-btn-group
                       label
-                        input(type="radio" name="quality" value="low")
+                        input(type="radio" name="account_type" value="security_guard" checked)
                         .btn.btn-default
                           | Security Guard
                       label
-                        input(type="radio" name="quality" value="medium")
+                        input(type="radio" name="account_type" value="business_owner")
                         .btn.btn-default
                           | Business Owner
                       label
-                        input(type="radio" name="quality" value="high" checked)
+                        input(type="radio" name="account_type" value="home_user")
                         .btn.btn-default
                           | Home User
               .content-block-sm
@@ -64,7 +64,7 @@ title: Pricing Calculator
                     .tdy-radio-btn-group-label
                       | Playback time, days
                   .col-sm-6.col-md-8
-                    input.form-control type="number" placeholder="Record loop" value="7"
+                    input.form-control type="number" placeholder="Record loop" value="30"
 
               .collapse.in(role="pricing-calculator-advanced")
                 a.btn-link--blue-light(data-toggle="collapse" href="[role='pricing-calculator-advanced']")
