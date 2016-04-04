@@ -17,6 +17,25 @@ title: Pricing Calculator
                 .row
                   .col-sm-6.col-md-4
                     .tdy-radio-btn-group-label
+                      | Account type
+                  .col-sm-6.col-md-8
+                    .tdy-radio-btn-group
+                      label
+                        input(type="radio" name="quality" value="low")
+                        .btn.btn-default
+                          | Security Guard
+                      label
+                        input(type="radio" name="quality" value="medium")
+                        .btn.btn-default
+                          | Business Owner
+                      label
+                        input(type="radio" name="quality" value="high" checked)
+                        .btn.btn-default
+                          | Home User
+              .content-block-sm
+                .row
+                  .col-sm-6.col-md-4
+                    .tdy-radio-btn-group-label
                       | Video quality
                   .col-sm-6.col-md-8
                     .tdy-radio-btn-group
@@ -39,6 +58,14 @@ title: Pricing Calculator
                       | Record loop, days
                   .col-sm-6.col-md-8
                     input.form-control type="number" placeholder="Record loop" value="7"
+              .content-block-sm
+                .row
+                  .col-sm-6.col-md-4
+                    .tdy-radio-btn-group-label
+                      | Playback time, days
+                  .col-sm-6.col-md-8
+                    input.form-control type="number" placeholder="Record loop" value="7"
+
               .collapse.in(role="pricing-calculator-advanced")
                 a.btn-link--blue-light(data-toggle="collapse" href="[role='pricing-calculator-advanced']")
                   | Show advanced settings
