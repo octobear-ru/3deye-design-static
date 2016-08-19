@@ -42,6 +42,9 @@ window.App ||= {}
       target = $(@).attr('href') || $(@).data('target')
       $(target).collapse('toggle')
 
+
+    $('[data-toggle="tooltip"]').tooltip()
+
 )(window.App ||={})
 
 

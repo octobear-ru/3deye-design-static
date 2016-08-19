@@ -26,6 +26,13 @@ title: Sign up
                 | Billing
 
           form(action="../business-info" role="signup-validator")
+            .text-center.content-block
+              span.text-size-large.text-main-regular
+                | Contact information
+              span.text-muted(data-toggle="tooltip" title="tooltip example")
+                | &nbsp;&nbsp;&nbsp;
+                | ?
+
             .content-block
               .form-group.has-feedback.content-block-sm
                 input.form-control type="email" placeholder="Email"
@@ -110,8 +117,13 @@ title: Sign up
                     select.form-control required="required"
                       - for i in 2016..2026
                         option= i
-              .form-group.has-feedback.content-block-sm
-                input.form-control type="number" placeholder="CVC/CVV" required="required"
+              .form-inline
+                .form-group.has-feedback.content-block-sm
+                  input.form-control type="number" placeholder="CVC/CVV" required="required"
+                  span.btn.text-muted(data-toggle="tooltip" title="tooltip example")
+                    | &nbsp;
+                    | ?
+
 
 
             .text-center
