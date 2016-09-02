@@ -1,7 +1,0 @@
-.breadcrumbs-steps.breadcrumbs-steps--white
-  - data.signup.steps.each_with_index do |(k, v), i|
-    a.breadcrumbs-steps__item-link(href=v.url class="#{k.to_s == locals[:active].to_s ? 'breadcrumbs-steps__item-link--active' : ''}")
-      = v.title
-    - unless i == data.signup.steps.count - 1
-      i.ics.ics-angle-right.breadcrumbs-steps__divider
-

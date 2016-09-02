@@ -1,0 +1,1 @@
+(function(){window.DataToggleHide||(window.DataToggleHide={}),function(){return $(document).ready(function(){var t;return t=$('[data-toggle*="toggle"]'),t.each(function(){var t;return t=$(this).data("target")||$(this).attr("href"),$(this).on("click",function(e){return e.preventDefault(),$(t).toggle()})})})}(window.DataToggleHide||(window.DataToggleHide={}))}).call(this);
